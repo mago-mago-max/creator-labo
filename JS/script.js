@@ -56,7 +56,7 @@ for (let i = 0; i < flowlists.length; i++) {
   const { title, detail } = flowlists[i];
   let content = '';
   if (i != flowlists.length - 1) {
-    content = `<div class="step"><div class="do"><h3>${title}</h3></div><p>${detail}</p></div><img src="./img/down.png" alt="下矢印">`;
+    content = `<div class="step"><div class="do"><h3>${title}</h3></div><p>${detail}</p></div><img src="img/down.png" alt="下矢印">`;
   } else {
     content = `<div class="step"><div class="do"><h3>${title}</h3></div><p>${detail}</p></div>`;
   }
