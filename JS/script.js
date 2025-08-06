@@ -1,3 +1,4 @@
+// 概要の追加
 const overview = document.querySelector('#overview-list');
 const lists = [
   {
@@ -32,6 +33,8 @@ for (let i = 0; i < lists.length; i++) {
   overview.insertAdjacentHTML('beforeend', content);
 }
 
+
+// 制作の流れの追加
 const flow = document.querySelector('#flow-list');
 const flowlists = [
   {
@@ -63,6 +66,8 @@ for (let i = 0; i < flowlists.length; i++) {
   flow.insertAdjacentHTML('beforeend', content);
 }
 
+
+// 施設情報の追加
 const facility = document.querySelector('#facility-list');
 const facilitylists = [
   {
@@ -85,6 +90,8 @@ for (let i = 0; i < facilitylists.length; i++) {
   facility.insertAdjacentHTML('beforeend', content);
 }
 
+
+// 上へスクロールする機能
 const topbtn = document.querySelector('#top');
 topbtn.addEventListener('click', () => {
   window.scrollTo({
@@ -93,6 +100,8 @@ topbtn.addEventListener('click', () => {
   });
 });
 
+
+// ヘッダーを常に表示
 const headerscroll = document.querySelector('#scroll');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
@@ -102,6 +111,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// 警告
 const attention = document.querySelector('#attention');
 attention.addEventListener('click', () => {
   window.alert("異なるページに遷移します");

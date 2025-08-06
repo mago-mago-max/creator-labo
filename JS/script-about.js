@@ -1,3 +1,4 @@
+// 施設情報の追加
 const facility = document.querySelector('#facility-list');
 const facilitylists = [
   {
@@ -20,6 +21,8 @@ for (let i = 0; i < facilitylists.length; i++) {
   facility.insertAdjacentHTML('beforeend', content);
 }
 
+
+// 過去のテーマリストの追加
 const theme = document.querySelector('#old-list');
 const themelists = [
   {
@@ -69,6 +72,8 @@ for (let i = 0; i < themelists.length; i++) {
   theme.insertAdjacentHTML('beforeend', content);
 }
 
+
+// 上へスクロールする機能
 const topbtn = document.querySelector('#top');
 topbtn.addEventListener('click', () => {
   window.scrollTo({
@@ -77,6 +82,8 @@ topbtn.addEventListener('click', () => {
   });
 });
 
+
+// ヘッダーを常に表示
 const headerscroll = document.querySelector('#scroll');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
