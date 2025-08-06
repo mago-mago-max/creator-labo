@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クリエイターラボ</title>
+  <!-- cssの読み込み -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScriptの読み込み -->
+  <script src="JS/script-about.js" defer></script>
+  <script src="JS/swiper.js" defer></script>
+  <!-- GoogleFontsの読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header id="scroll">
+    <nav>
+      <ul>
+        <li><span class="marker"><a href="#story">ストーリー</a></span></li>
+        <li><span class="marker"><a href="#view">概要</a></span></li>
+        <li><span class="marker"><a href="#about-facility">施設紹介</a></span></li>
+        <li><span class="marker"><a href="#old">過去のテーマ</a></span></li>
+        <li><span class="marker"><a href="#recruit">スタッフ募集</a></span></li>
+        <li><span class="marker"><a href="#access">施設情報・お問い合わせ</a></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <h3>たのしい を はつめい せよ！</h3>
+    <h1>Creator</h1>
+    <h1>Labo</h1>
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main>
+
+    <!-- クリラボの世界観について -->
+    <section class="main-section story" id="story">
+      <div class="container">
+        <div class="heading-group">
+          <h2>ストーリー</h2>
+        </div>
+        <div class="prologue">
+          <p>ここは、モノづくりが大好きな人たちが集まる街「ツクレシティ」。</p>
+          <p>地下には、いつも賑やかな“モノづくりの研究所”があります。</p>
+          <p>その名も「クリエイターラボ」。</p>
+          <p>ラボの所長である博士は、いつも夢中で研究しています。</p>
+          <p>そんなラボには毎月、<strong>不思議な差出人から「特別な依頼状」</strong>が届きます。</p>
+          <p>でも、博士は自分の研究で手一杯...。</p>
+          <p>悩んだ博士は、とあるアイデアをひらめきました。</p>
+          <p>それは「ツクレシティのみんなに手伝ってもらう」という作戦です。</p>
+          <br>
+          <p>今日もラボには、多くの仲間たちが大集合！</p>
+          <p>アイデアを出し合って、ものを作って、試して遊んで...。</p>
+          <p>みんなで力を合わせて、楽しいモノづくりにチャレンジします！</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- クリラボの概要について -->
+    <section class="main-section view" id="view">
+      <div class="container">
+        <div class="heading-group">
+          <h2>概要</h2>
+        </div>
+        <div class="text">
+          <p>「クリエイターラボ（クリラボ）」は、モノづくりを通して創造力を発揮し、課題に挑戦する参加型体験プログラムです。</p>
+          <p><strong>"「やってみたい」をカタチにする"</strong>を合言葉に、新たな発見や学びを得るお手伝いをいたします。</p>
+          <p>家族と、友人と、一人で。年齢を問わず、どなたでも参加可能です。</p>
+          <p>参加者全員で「楽しい」を作り上げていきましょう。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 施設紹介 -->
+    <section class="main-section about-facility" id="about-facility">
+      <div class="container">
+        <div class="heading-group">
+          <h2>施設紹介</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/map1.png" alt="クリエイターラボ"></div>
+            <div class="swiper-slide"><img src="/img/map2.png" alt="アイデアルーム"></div>
+            <div class="swiper-slide"><img src="/img/map3.png" alt="資材エリア"></div>
+            <div class="swiper-slide"><img src="/img/map4.png" alt="テストルーム"></div>
+            <div class="swiper-slide"><img src="/img/map5.png" alt="展示ルーム"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 過去のテーマについて -->
+    <section class="main-section old" id="old">
+      <div class="container">
+        <div class="heading-group">
+          <h2>過去のテーマ</h2>
+        </div>
+        <table>
+          <tbody id="old-list">
+          </tbody>
+        </table>
+    </section>
+
+
+    <!-- スタッフ募集について -->
+    <section class="main-section recruit" id="recruit">
+      <div class="container">
+        <div class="heading-group">
+          <h2>スタッフ募集</h2>
+        </div>
+        <div class="staff">
+          <p>現在、募集は行っておりません。</p>
+        </div>
+    </section>
+
+    <!-- 施設情報・お問い合わせ -->
+    <section class="main-section access" id="access">
+      <div class="container">
+        <div class="heading-group">
+          <h2>施設情報・お問い合わせ</h2>
+        </div>
+        <div class="over-access">
+          <div class="facility">
+            <h3>施設情報</h3>
+            <dl id="facility-list">
+            </dl>
+            <ul>
+              <li>駐車場・駐輪場あり</li>
+              <li>バリアフリー対応</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>お問い合わせ</h3>
+            <p>クリエイターラボに関するご質問は、<br>以下よりご連絡ください。</p>
+            <dl>
+              <dt>メール</dt>
+              <dd><a href="mailto:create@example.com">create@example.com</a></dd>
+              <dt>電話</dt>
+              <dd>03-2345-6789（受付時間 10:00〜19:00）</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 上へボタン -->
+    <div id="top" class="top">
+      上へ
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <nav>
+      <ul>
+        <li><span class="marker"><a href="#story">ストーリー</a></span></li>
+        <li><span class="marker"><a href="#view">概要</a></span></li>
+        <li><span class="marker"><a href="#about-facility">施設紹介</a></span></li>
+        <li><span class="marker"><a href="#recruit">スタッフ募集</a></span></li>
+        <li><span class="marker"><a href="#old">過去のテーマ</a></span></li>
+        <li><span class="marker"><a href="#access">施設情報・お問い合わせ</a></span></li>
+      </ul>
+    </nav>
+    <p class="copyright">©クリエイターラボ</p>
+  </footer>
+
+</body>
+
+</html>

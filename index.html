@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クリエイターラボ：ボドゲ編</title>
+  <!-- cssの読み込み -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScriptの読み込み -->
+  <script src="JS/script.js" defer></script>
+  <!-- GoogleFontsの読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header id="scroll">
+    <nav>
+      <ul>
+        <li><span class="marker"><a href="#theme">今月のテーマ</a></span></li>
+        <li><span class="marker"><a href="#overview">開催概要</a></span></li>
+        <li><span class="marker"><a href="#order">参加申し込み</a></span></li>
+        <li><span class="marker"><a href="#about" class="marker">クリラボについて</a></span></li>
+        <li><span class="marker"><a href="#access">施設情報・お問い合わせ</a></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <h3>たのしい を はつめい せよ！</h3>
+    <h1>Creator</h1>
+    <h1>Labo</h1>
+    <div>
+      <h4>ボードゲーム編</h4>
+    </div>
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main>
+
+    <!-- 今月のテーマについて -->
+    <section class="main-section theme" id="theme">
+      <div class="container">
+        <div class="heading-group"></div>
+        <h3>今月のテーマは</h3>
+        <h2>ボードゲーム</h2>
+        <p>性別や年齢なんて関係ない。</p>
+        <p>みんなで遊べる楽しいボードゲームを考えて、つくっちゃおう。</p>
+        <p>完成しなくてもOK！</p>
+        <p>みんなのアイデアで実際に遊ぼう！</p>
+      </div>
+    </section>
+
+    <!-- 開催概要 -->
+    <section class="main-section overview" id="overview">
+      <div class="container">
+        <div class="heading-group">
+          <h2>開催概要</h2>
+        </div>
+        <table>
+          <tbody id="overview-list">
+          </tbody>
+        </table>
+      </div>
+      <p>詳細はお申し込みされた方にメールでお送りいたします。</p>
+    </section>
+
+    <!-- 制作の流れ -->
+    <section class="main-section flow" id="flow">
+      <div class="container">
+        <div class="heading-group">
+          <h2>制作の流れ</h2>
+        </div>
+        <div id="flow-list">
+        </div>
+        <div class="add">
+          <h3>＼目指せ！認定クリエイター！／</h3>
+        </div>
+        <div class="add-detail">
+          <p>作品を作り始めると「見習いクリエイター」の称号をもらえる！</p>
+          <p>作品を完成・公開して、「認定クリエイター」の称号をGETしよう！</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 参加申し込み -->
+    <section class="main-section order" id="order">
+      <div class="container">
+        <div class="heading-group">
+          <h2>参加申し込み</h2>
+        </div>
+        <div>
+          <p>参加のためには、事前申し込みが必要です。</p>
+          <p>参加を希望される方は、専用フォームから事前申し込みをお願いします。</p>
+          <p>（ただし、定員に達した段階で受付は終了となりますのでご了承ください）</p>
+          <p>申込期間：□月〇日～〇月△日</p>
+          <a href="entry.html" class="jump">申し込みはこちら</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ラボについて -->
+    <section class="main-section about" id="about">
+      <div class="container">
+        <div class="heading-group">
+          <h2>クリエイターラボについて</h2>
+        </div>
+        <div>
+          <p>地下にひっそりとある、</p>
+          <p>だけどとびきり賑やかな“ひみつの研究所”</p>
+          <p>それが「クリエイターラボ」（通称：クリラボ）。</p>
+          <p>ツクレシティ地下にある、創造の拠点です。</p>
+          <a class="jump" href="about.html">クリエイターラボについてもっと知る
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 施設情報・お問い合わせについて -->
+    <section class="main-section access" id="access">
+      <div class="container">
+        <div class="heading-group">
+          <h2>施設情報・お問い合わせ</h2>
+        </div>
+        <div class="over-access">
+          <div class="facility">
+            <h3>施設情報</h3>
+            <dl id="facility-list">
+            </dl>
+            <ul>
+              <li>駐車場・駐輪場あり</li>
+              <li>バリアフリー対応</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>お問い合わせ</h3>
+            <p>イベントに関するご質問や取材希望などは、<br>以下よりご連絡ください。</p>
+            <dl>
+              <dt>主催</dt>
+              <dd>クリラボ実行委員会</dd>
+              <dt>メール</dt>
+              <dd><a href="mailto:info@example.com">info@example.com</a></dd>
+              <dt>電話</dt>
+              <dd>03-1234-5678（受付時間 10:00〜19:00）</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 上へボタン -->
+    <div id="top" class="top">
+      上へ
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <nav>
+      <ul>
+        <li><span class="marker"><a href="#theme">今月のテーマ</a></span></li>
+        <li><span class="marker"><a href="#overview">開催概要</a></span></li>
+        <li><span class="marker"><a href="#order">参加申し込み</a></span></li>
+        <li><span class="marker"><a href="#about">クリラボについて</a></span></li>
+        <li><span class="marker"><a href="#access">施設情報・お問い合わせ</a></span></li>
+      </ul>
+      <ul class="attentnion" id="attention">
+        <li><span class="marker"><a href="about.html#recruit">スタッフ募集</a></span></li>
+        <li><span class="marker"><a href="about.html">ホームページ</a></span></li>
+      </ul>
+    </nav>
+    <p class="copyright">©2025 クリラボ実行委員会</p>
+  </footer>
+
+</body>
+
+</html>
