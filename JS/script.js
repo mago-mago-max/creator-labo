@@ -29,7 +29,7 @@ const lists = [
 
 for (let i = 0; i < lists.length; i++) {
   const { title, detail } = lists[i];
-  const content = `<tr><th>${title}</th><td>${detail}</td></tr>`;
+  const content = `<dt>${title}</dt><dd>${detail}</dd>`;
   overview.insertAdjacentHTML('beforeend', content);
 }
 

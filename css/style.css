@@ -139,34 +139,37 @@ main {
 .overview {
   place-items: center;
 
-  table {
-    border-collapse: separate;
-    border-spacing: 20px;
-  }
-
-  th,
-  td {
-    padding: 5px 10px;
+  dl {
     font-family: "DotGothic16", sans-serif;
-    font-size: 20px;
-  }
-
-  th {
+    padding: 10px;
     text-align: center;
-    background-color: #A4DE02;
-    color: #fff;
-    font-weight: normal;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    dt,
+    dd {
+      place-items: center;
+      font-weight: 400;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    dt {
+      grid-column: 1;
+      background-color: #A4DE02;
+      margin-right: 20px;
+      margin-left: 20px;
+      color: #fff;
+    }
+
+    dd {
+      grid-column: 2;
+      text-align: left;
+    }
+
   }
 
-  td {
-    background-color: #fff;
-    padding-left: 25px;
-  }
-
-  tr {
-    border: 2px solid #A4DE02;
-    margin: 20px;
-  }
 
   p {
     margin-top: 20px;
